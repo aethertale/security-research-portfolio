@@ -40,7 +40,12 @@ Bug-bounty and audit work is largely private or under coordinated disclosure. Re
 
 ## Writeups
 
+Generalized methodology notes distilled from real engagements. No specific protocol, deployment, or live finding is referenced.
+
 - [`writeups/bridge-nonce-ordering-pitfalls.md`](writeups/bridge-nonce-ordering-pitfalls.md) — how strictly-monotonic deposit nonces on a permissionless relay entrypoint become a permanent fund-lock griefing vector, and how to design them safely.
+- [`writeups/signature-hash-field-binding.md`](writeups/signature-hash-field-binding.md) — confused-deputy bugs from signed hashes that omit a decision-relevant field; how to enumerate the read-vs-signed gap, and the trusted-prerequisite caveat.
+- [`writeups/rigorous-zero-finding-audits.md`](writeups/rigorous-zero-finding-audits.md) — why an evidence-gated "no reportable findings" is a legitimate, valuable outcome, and what a defensible zero-finding report looks like.
+- [`writeups/upgradeable-proxy-safety-checklist.md`](writeups/upgradeable-proxy-safety-checklist.md) — UUPS/proxy audit checklist: uninitialized implementations, `_disableInitializers`, storage layout, `__gap`, and upgrade authorization.
 
 ---
 
